@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store &middot; Elephant Template &middot; The fastest way to build Modern Admin APPS for any platform, browser, or device.</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta property="og:url" content="http://demo.madebytilde.com/elephant">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The fastest way to build Modern Admin APPS for any platform, browser, or device.">
+    <meta property="og:description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta property="og:image" content="http://demo.madebytilde.com/elephant.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@madebytilde">
+    <meta name="twitter:creator" content="@madebytilde">
+    <meta name="twitter:title" content="The fastest way to build Modern Admin APPS for any platform, browser, or device.">
+    <meta name="twitter:description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta name="twitter:image" content="http://demo.madebytilde.com/elephant.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../main/manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
+    <link rel="stylesheet" href="../css/vendor.min.css">
+    <link rel="stylesheet" href="../css/elephant.min.css">
+    <link rel="stylesheet" href="../css/application.min.css">
+    <link rel="stylesheet" href="../css/store.min.css">
+  </head>
+  <script src="../js/jquey.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+		
+		$("#header").load("../header.html");
+      $("#side_menu").load("../side_menu.html");
+      $("#footer").load("../footer.html");
+    });
+  </script>
+  <body class="layout layout-header-fixed">
+    <div id="header"></div>
+    
+    <div class="layout-main">
+      <div id="side_menu"></div>
+     
+      <div class="layout-content">
+        <div class="layout-content-body">
+          <div class="row">
+            <div class="col-md-12">
+              <p><small>In addition to the basic styling that Bootstrap offers for every element of a form, we have expanded this styling with custom <code>selects</code>, <code>checkboxes</code>, <code>radios</code>, <code>switches</code> and a few additional classes.<span class="nowrap">Please see <a href="toggles.html">Toggles page</a></span>.</small></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="demo-form-wrapper">
+                <form class="form form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-1">Text input</label>
+                    <div class="col-sm-9">
+                      <input id="form-control-1" class="form-control" type="text">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-4">Predefined value</label>
+                    <div class="col-sm-9">
+                      <input id="form-control-4" class="form-control" type="url" value="language:JavaScript">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-7">Multiple select</label>
+                    <div class="col-sm-9">
+                      <select id="form-control-7" class="form-control" multiple="multiple">
+                        <option value="c-plus-plus">C++</option>
+                        <option value="css">CSS</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="ruby">Ruby</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-8">Textarea</label>
+                    <div class="col-sm-9">
+                      <textarea id="form-control-8" class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-9">File input</label>
+                    <div class="col-sm-9">
+                      <input id="form-control-9" type="file" accept="image/*" multiple="multiple">
+                      <p class="help-block">
+                        <small>Unlimited number of files can be uploaded to this field. Allowed types: png gif jpg jpeg.</small>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Checkboxes and radios</label>
+                    <div class="col-sm-9">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="mode" checked="checked"> Put site into maintenance mode
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="message" value="none"> None
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="message" value="all" checked="checked"> All messages
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="message" value="some"> Errors and warnings
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="demo-form-wrapper">
+                <form class="form form-horizontal">
+                  
+                  <div class="form-group form-group-md">
+                    <label class="col-sm-3 control-label" for="form-control-11">Default label</label>
+                    <div class="col-sm-9">
+                      <input id="form-control-11" class="form-control" type="text" placeholder="Default input">
+                    </div>
+                  </div>
+                 
+                </form>
+              </div>
+             
+              <div class="demo-form-wrapper">
+                <form class="form form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-17">Input groups</label>
+                    <div class="col-sm-9">
+                      <div class="input-group">
+                        <input id="form-control-17" class="form-control" type="text" placeholder="eg. teddy.wilson">
+                        <span class="input-group-addon">@elephant.theme</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-4 col-sm-3 col-sm-offset-3">
+                      <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input class="form-control" type="text" value="1.00" aria-label="US Dollar">
+                      </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                      <div class="input-group">
+                        <span class="input-group-addon">€</span>
+                        <input class="form-control" type="text" value="0.89" aria-label="Euro">
+                      </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                      <div class="input-group">
+                        <span class="input-group-addon">£</span>
+                        <input class="form-control" type="text" value="0.69" aria-label="British Pound">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <span class="icon icon-lock"></span>
+                        </span>
+                        <input class="form-control" type="password" placeholder="Password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                      <div class="input-group">
+                        <div class="input-group-btn dropdown">
+                          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+                            GitHub
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">
+                                <div class="media">
+                                  <div class="media-left">
+                                    <span class="icon icon-github icon-2x icon-fw"></span>
+                                  </div>
+                                  <div class="media-body">
+                                    GitHub
+                                    <br>
+                                    <small>Clone with an SSH key from your GitHub settings.</small>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="media">
+                                  <div class="media-left">
+                                    <span class="icon icon-bitbucket icon-2x icon-fw"></span>
+                                  </div>
+                                  <div class="media-body">
+                                    Bitbucket
+                                    <br>
+                                    <small>Clone with an SSH key from your Bitbucket settings.</small>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <input class="form-control" type="text" value="https://github.com/elephant.theme">
+                        <div class="input-group-btn">
+                          <button class="btn btn-primary" title="Copy to clipboard" data-container="body" data-placement="top" data-toggle="tooltip" type="button">
+                            <span class="icon icon-copy icon-fw"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="demo-form-wrapper">
+                <form class="form form-horizontal">
+                  
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Custom checkboxes,
+                      <br>radios and switches</label>
+                    <div class="col-sm-9">
+                      <div class="custom-controls-stacked m-t">
+                        <label class="custom-control custom-control-primary custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" name="mode" checked="checked">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-label">Put site into maintenance mode</span>
+                        </label>
+                        <label class="custom-control custom-control-primary custom-radio">
+                          <input class="custom-control-input" type="radio" name="message" value="none">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-label">None</span>
+                        </label>
+                        <label class="custom-control custom-control-primary custom-radio">
+                          <input class="custom-control-input" type="radio" name="message" value="all" checked="checked">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-label">All messages</span>
+                        </label>
+                        <label class="custom-control custom-control-primary custom-radio">
+                          <input class="custom-control-input" type="radio" name="message" value="some">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-label">Errors and warnings</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                      <label class="switch switch-primary">
+                        <input class="switch-input" type="checkbox" checked="checked">
+                        <span class="switch-track"></span>
+                        <span class="switch-thumb"></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+		<div id="footer"></div>
+		<!-- //Footer -->
+    </div>
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/elephant.min.js"></script>
+    <script src="../js/application.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-83990101-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

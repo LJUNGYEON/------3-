@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard 1 &middot; Elephant Template &middot; The fastest way to build Modern Admin APPS for any platform, browser, or device.</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta property="og:url" content="http://demo.madebytilde.com/elephant">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The fastest way to build Modern Admin APPS for any platform, browser, or device.">
+    <meta property="og:description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta property="og:image" content="http://demo.madebytilde.com/elephant.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@madebytilde">
+    <meta name="twitter:creator" content="@madebytilde">
+    <meta name="twitter:title" content="The fastest way to build Modern Admin APPS for any platform, browser, or device.">
+    <meta name="twitter:description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta name="twitter:image" content="http://demo.madebytilde.com/elephant.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
+    <link rel="stylesheet" href="../css/vendor.min.css">
+    <link rel="stylesheet" href="../css/elephant.min.css">
+    <link rel="stylesheet" href="../css/application.min.css">
+  </head>
+  <script src="../js/jquey.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("#header").load("../header.html");
+      $("#side_menu").load("../side_menu.html");
+      $("#footer").load("../footer.html");
+    })
+function go_list() {
+        $("#progress").addClass('spinner');
+        document.form_to_save.submit();
+    }
+    
+    function goto_modify(CreatedDate)
+    {
+        $("#progress").addClass('spinner');
+        document.form_to_save.CreatedDate.value = CreatedDate;
+        document.form_to_save.action = "./pds_mod_form.html";
+        document.form_to_save.submit();
+    }
+
+</script>
+
+    <style>
+    #changeHtml ul {
+        list-style: disc;
+        padding-left: 40px;
+    }
+    #changeHtml ul li {
+        list-style: disc;
+    }
+    
+    #changeHtml ol {
+        list-style: decimal;
+        padding-left: 40px;
+    }
+    #changeHtml ol li {
+        list-style: decimal;
+    }
+    .line_break {
+       word-break: break-all;
+       /* white-space: break-spaces; */
+       white-space:initial;
+    }
+    
+    blockquote {
+        font-size: 13px;
+    }
+    </style>
+</head>
+<body class="layout layout-header-fixed">
+    <div id="header"></div>
+    
+    
+    <div class="layout-main">
+        <div id="side_menu"></div>
+        <!-- Contents -->
+        <div id="BodyArea" class="layout-content" >
+            <div class="layout-content-body">
+                
+                    <div class="row gutter">
+                    <div class="col-xs-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="big">상세보기</h3>
+                            
+                            </div>
+                            <div class="card-body table-responsive">
+                                <table class="table type-18">
+                                <tr>
+                                <th>타이틀</th>
+                                <td class="line_break">
+                                    제목
+                                </td>
+                                </tr>
+                                <tr>
+                                    <th>작성자<span>(아이디)</span></th>
+                                    <td>
+                                        홍길동(gdhong)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>작성일</th>
+                                    <td>
+        <%
+                                    2023.12.25 11:11:11
+        %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>조회수</th>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td id="changeHtml" class="line_break" >
+                                    
+                                    </td>   
+                                </tr>
+                                <tr>
+                                    <th>
+                                        첨부파일
+                                    </th>
+                                    <td>
+                                        <div id="DownLoadFileList"  class="download_file_list" style="width:98%;display:block;"></div>
+                                    
+                                    </td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-default btn-basic" type="button" onclick="goto_modify('20231225111111')"> 수정</button>
+                            <button class="btn btn-default btn-basic" type="button" onclick="go_list()"> 목록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="footer"></div>
+    </div>
+    </div>
+
+    <!-- spinner -->
+    <div id="progress" class="spinner-success spinner-lg sq-100"></div>
+    <!-- //spinner -->
+    
+    <form name="form_to_save" method="post" action="./pds_list.html">
+        
+        <input type="hidden" name="CreatedDate" value=""/>
+        <input type="hidden" name="UserID" value=""/>
+        <input type="hidden" name="Number" value=""/>
+        <input type="hidden" name="Page" value=""/>
+        <input type="hidden" name="TableRows" value=""/>
+        <input type="hidden" name="likeColumn" value=""/>
+        <input type="hidden" name="likeValue" value=""/>
+    </form>
+    
+    <script src="../js/vendor.js"></script>
+    <script src="../js/elephant.js"></script>
+    <script src="../js/application.js"></script>
+    <script src="../js/demo.js"></script>
+    <script src="../js/jquery-autocomplete.js"></script>
+</body>
+</html>
